@@ -29,39 +29,60 @@
 
 </head>
 <body>
-  <div id="container">
-    <header class="topo">  <!--  Inicio do nav  -->
-        <section class="logomenu">
-        <a href="#">
-          <h1>BalanCeará</h1>
-          <img src="./imagens/logo.png" alt="Logo BalanCeará">
-        </a>
-        </section>
-        <section class="menu">
-         <ul id="menu-topo">
-            <li>
-              <a href="#" id="" style="color: #F6D333">somos</a>
-            </li>
-           <li>
-             <a href="#" id="blog" style="color:#D94253">blog</a>
-            </li>
-           <li>
+  <div id="container-fluid">
+    <header class="topo d-none d-md-block">  <!--  Inicio do nav  -->
+      <div class="topo d-inline-flex justify-content-between">
+        <div class="logo">
+          <a href="#">
+            <h1>BalanCeará Redução de Riscos e Danos</h1>
+            <img src="./imagens/logo.png">
+          </a>
+        </div>
+        <div class="menu">
+          <ul id="menu-topo">
+             <li>
+              <a href="#" id="" style="color: #F6D333"><b>somos</b></a>
+             </li>
+             <li>
+              <a href="#" id="blog" style="color:#D94253">blog</a>
+             </li>
+             <li>
               <a href="#" id="blog" style="color:#3FB0D2">biblioteca</a>
-            </li>
-           <li>
+             </li>
+             <li>
               <a href="#" id="agenda" style="color:#BC4C7A">agenda</a>
-            </li>
-         </ul>
-        </section>
-        <section class="icones">
-         <ul>
-          <li><a href=""><img src="./imagens/icones/fb-icone.png" style="width: 2.5vw"></a></li>
-          <li><a href=""><img src="./imagens/icones/ig-icon.png" style="width: 2.5vw"></a></li>
-          <li><a href=""><img src="./imagens/icones/yt-icon.png" style="width: 2.5vw"></a></li>
-          <li><a href=""><img src="./imagens/icones/mail-icon.png" style="width: 2.5vw"></a></li>
-         </ul>
-        </section>
+             </li>
+          </ul>
+        </div>
+        <div class="icones">
+          <ul>
+            <li><a href=""><img src="./imagens/icones/fb-icone.png" style="width: 2.5vw"></a></li>
+            <li><a href=""><img src="./imagens/icones/ig-icon.png" style="width: 2.5vw"></a></li>
+            <li><a href=""><img src="./imagens/icones/yt-icon.png" style="width: 2.5vw"></a></li>
+            <li><a href=""><img src="./imagens/icones/mail-icon.png" style="width: 2.5vw"></a></li>
+          </ul>
+        </div>
+      </div>
     </header>    <!--  Final do nav  -->
+    
+    <header class="topo-mb d-md-none"><!--  Inicio do nav mobile  -->
+      <div class="logo-mb">
+        <h1 style="display: none;">Coletivo BalanCeará</h1>
+        <img src="./imagens/logo.png" alt="Logo BalanCeará">
+      </div>
+      <div class="dropdown dropleft" id="menu-mb">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <i class="fas fa-bars"></i>
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#" style="color: #F6D333"><b>somos</b></a>
+          <a class="dropdown-item" href="#" style="color:#D94253"><b>blog</b></a>
+          <a class="dropdown-item" href="#" style="color:#3FB0D2"><b>biblioteca</b></a>
+          <a class="dropdown-item" href="#" style="color:#BC4C7A"><b>contato</b></a>
+        </div>
+      </div>
+    </header><!--  Final do nav  mobile-->
     
     <section id="banner"><!--  Inicio do banner  -->
       
@@ -76,7 +97,7 @@
 
             <div class="carousel-item active">
 
-                <img src="./imagens/carousel1.png" class="img-fluid d-block ">
+                <img src="./imagens/carousel1.png" class="img-fluid d-block w-100">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Tempor cillum officia.</h5>
                   <p>Est ad minim qui eiusmod incididunt sint velit et laborum elit magna ut ex.</p>
@@ -144,10 +165,19 @@
     <section id="cadastro"><!--  Inicio do cadastro  -->
       <h3>Fique ligado</h3>
       <p>Cadastre o seu melhor email e receba todos os conteúdos eventos:</p>
+      <div class="form-group">
         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu nome">
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
         <button type="submit" class="btn">Enviar</button>
+      </div>
       <p>Siga nossas redes sociais</p>
+      <div class="social">
+        <ul>
+          <li><a href=""><img src="./imagens/icones/fb-icone.png"></a></li>
+          <li><a href=""><img src="./imagens/icones/ig-icon.png"></a></li>
+          <li><a href=""><img src="./imagens/icones/yt-icon.png"></a></li>  
+        </ul>
+      </div>
       
     </section><!--  Final do cadastro  -->
 
