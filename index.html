@@ -13,11 +13,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
 
     <!-- Pagina de estilos -->
     <link href="./css/style.css" rel="stylesheet">
@@ -35,13 +31,13 @@
 <body>
   <div id="container">
     <header class="topo">  <!--  Inicio do nav  -->
-       <section class="logomenu">
+        <section class="logomenu">
         <a href="#">
           <h1>BalanCeará</h1>
           <img src="./imagens/logo.png" alt="Logo BalanCeará">
         </a>
-       </section>
-       <section class="menu">
+        </section>
+        <section class="menu">
          <ul id="menu-topo">
             <li>
               <a href="#" id="" style="color: #F6D333">somos</a>
@@ -56,22 +52,14 @@
               <a href="#" id="agenda" style="color:#BC4C7A">agenda</a>
             </li>
          </ul>
-       </section>
+        </section>
         <section class="icones">
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/balanceara"><i id="ig"></i></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/balanceara"><i class="fab fa-facebook-square"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-youtube-square"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-envelope-square"></i></a>
-            </li>
-          </ul>
+         <ul>
+          <li><a href=""><img src="./imagens/icones/fb-icone.png" style="width: 2.5vw"></a></li>
+          <li><a href=""><img src="./imagens/icones/ig-icon.png" style="width: 2.5vw"></a></li>
+          <li><a href=""><img src="./imagens/icones/yt-icon.png" style="width: 2.5vw"></a></li>
+          <li><a href=""><img src="./imagens/icones/mail-icon.png" style="width: 2.5vw"></a></li>
+         </ul>
         </section>
     </header>    <!--  Final do nav  -->
     
@@ -88,7 +76,7 @@
 
             <div class="carousel-item active">
 
-                <img src="./imagens/carousel1.png" class="img-fluid d-block w-100">
+                <img src="./imagens/carousel1.png" class="img-fluid d-block ">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Tempor cillum officia.</h5>
                   <p>Est ad minim qui eiusmod incididunt sint velit et laborum elit magna ut ex.</p>
@@ -127,13 +115,15 @@
               </span>
        </a>
       </div>  
-
     </section><!--  Final do banner  -->
+
     <section id="somos"><!--  Inicio do somos  -->
-      <h2>somos um movimento social de usuários que se organizam para cuidar dos seus pares!</h2>
+      <div class="titulo">
+        <h2>somos um movimento social de usuários que se organizam para cuidar dos seus pares!</h2>
+      </div>
       <div class="caixa">
         <div id="somos-img-1">
-          <img src="./imagens/somos01.png">
+          <img class="img-fluid" src="./imagens/somos01.png">
         </div>
         <div id="somos-txt-1">
           <p>Nossos projetos acontecem através de espaços de diálogos e trocas de experiêcias enter o grupo - enquanto usuários e redutoresde danos - bem como outros coletivos e profissionais da saúde.</p>
@@ -142,20 +132,46 @@
       <div class="caixa">
         
         <div id="somos-txt-2">
-          <p>Discussões e estudos de casos vivenciados ou acompanhado nas ações e grupos de estudos sobre  as substâncias, políticas sobre drogas e tematicas adjacentes. Sem qualquer julgamento moral, despertando o interesse para o âmbito político e social da redução de danos</p>
-          <a href="#"><span>Saiba Mais</span></a>
+          <p>Discussões e estudos de casos vivenciados ou acompanhado nas ações e grupos de estudos sobre  as substâncias, políticas sobre drogas e tematicas adjacentes. Sem qualquer julgamento moral, despertando o interesse para o âmbito político e social da redução de danos <br><a href="#"><span>Saiba Mais</span></a></p>
+          
         </div>
         <div id="somos-img-2">
-          <img src="./imagens/somos02.png">
+          <img class="img-fluid" src="./imagens/somos02.png">
         </div>
       </div>
     </section><!--  Final do somos  -->
+
     <section id="cadastro"><!--  Inicio do cadastro  -->
       <h3>Fique ligado</h3>
       <p>Cadastre o seu melhor email e receba todos os conteúdos eventos:</p>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu nome">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+        <button type="submit" class="btn">Enviar</button>
+      <p>Siga nossas redes sociais</p>
+      
     </section><!--  Final do cadastro  -->
-    <footer id="rodape">
+
+    <section id="contato">
+      
+    </section>
+
+    <section id="hashtag">
+      <div class="hastag-txt">
+        <img src="./imagens/logob.png" class="img-fluid">
+        <p>O coletivo BalanCeará de #ReduçãodeDanos é um movimento social composto por usuários que se organizam para cuidar dos seus pares. <b>#VamosFalarSobreDrogas?</b></p>
+      </div>
+      <div class="hastag-img">
+        
+      </div><!--  Inicio do hashtag  -->
+    </section><!--  Final do hashtag  -->
+
+    <footer id="rodape"><!--  Inicio do rodapé  -->
       <p>2021 | BalanCeará &copy;  - Redução de Riscos e Danos - Fortaleza - Ceará</p>
-    </footer>
+    </footer><!--  Final do rodapé  -->
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
