@@ -58,19 +58,21 @@ html,body{
   height: 15vh;
   width: 100%;
   padding-top: 2vh;
-  margin-left: 50%;
   display: flex;
+  align-items: center;
 }
-.logo-mb h1{
+.topo-mb h1{
   display: none;
 }
 .dropdown{
+  width: 10px;
   padding: 0;
   position: absolute;
   display: inline-block;
+  padding: 0;
 }
 .dropdown img{
-  height: 6vh;
+  width: 8px;
 }
 
 /* BANNER ****************************************************/
@@ -90,7 +92,17 @@ html,body{
 .carousel-caption h5{
   font-size: 2vw;
 }
-
+@media only screen and (max-width: 768px){
+  .carousel-caption{
+    background: #000;
+    opacity: 0.8;
+    font-size: 1vw;
+  }
+  #banner{
+    width: 100%;
+    height: auto;
+  }
+}
 /* SOMOS ****************************************************/
 #somos{
   clear: both;
