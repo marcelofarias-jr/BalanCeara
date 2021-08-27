@@ -65,7 +65,6 @@ html,body{
   display: none;
 }
 .dropdown{
-  width: 4vw;
   padding: 0;
   position: absolute;
   display: inline-block;
