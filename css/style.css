@@ -59,7 +59,7 @@ html,body{
   width: 100%;
   padding-top: 2vh;
   display: flex;
-  align-items: center;
+  
 }
 .topo-mb h1{
   display: none;
@@ -72,7 +72,7 @@ html,body{
   padding: 0;
 }
 .dropdown img{
-  width: 8px;
+  width: 3vw;
 }
 
 /* BANNER ****************************************************/
@@ -96,7 +96,7 @@ html,body{
   .carousel-caption{
     background: #000;
     opacity: 0.8;
-    font-size: 1vw;
+    font-size: 2vw;
   }
   #banner{
     width: 100%;
