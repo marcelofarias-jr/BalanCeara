@@ -55,32 +55,32 @@ html,body{
 }
 /* TOPO MOBILLE************************************************/
 .topo-mb{
-  height: 15vh;
+  height: 5vh;
   width: 100%;
-  padding-top: 2vh;
+  padding-bottom: 8vh;
   display: flex;
-  
+
 }
 .topo-mb h1{
   display: none;
 }
 .dropdown{
-  width: 10px;
+  width: 4vw;
   padding: 0;
   position: absolute;
   display: inline-block;
   padding: 0;
 }
 .dropdown img{
-  width: 3vw;
+  width: 8vw;
 }
 
 /* BANNER ****************************************************/
 #banner{
-  height: 50vmax;
+  height: auto;
   width: 100vmax;
-  }
-  #banner img{
+}
+#banner img{
   width: 100%;
   height: 50vw;
   }
@@ -96,7 +96,7 @@ html,body{
   .carousel-caption{
     background: #000;
     opacity: 0.8;
-    font-size: 2vw;
+    font-size: 1.7vw;
   }
   #banner{
     width: 100%;
@@ -208,6 +208,11 @@ html,body{
   display: inline;
   margin-left: -5px;
 }
+@media only screen and (max-width: 768px){
+  .form-control{
+    width: 45vh;
+ }
+} 
 #cadastro button{
   height: 6vh;
   width: 25vh;
