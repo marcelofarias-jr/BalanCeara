@@ -64,14 +64,8 @@ html,body{
 .topo-mb h1{
   display: none;
 }
-.dropdown{
-  padding: 0;
-  position: absolute;
-  display: inline-block;
-  padding: 0;
-}
 .dropdown img{
-  width: 8vw;
+  height: 4vh;
 }
 
 /* BANNER ****************************************************/
@@ -184,19 +178,30 @@ html,body{
 }
 #somos-txt-mb{
   color: #fff;
-  font-size: 3vw;
+  font-size: 4vw;
   padding: 4vw;
   text-align: center;
 }
 /* CADASTRO *************************************************/
 #cadastro{
-  padding-top: 15vw;
-  padding-bottom: 10vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   width: 100%;
   background: #1AD6A4;
   text-align: center;
   color:  #fff;
   font-size: 1.4vw;
+}
+@media only screen and (max-width: 768px){
+  #cadastro{
+    padding-top: 3vh;
+    font-size: 3.5vw;
+    padding: 0 7vw;
+  }
+}
+#cadastro h3{
+  margin: 0;
+  padding: 0;
 }
 .form-group{
   line-height: 6vh;
@@ -210,6 +215,7 @@ html,body{
 @media only screen and (max-width: 768px){
   .form-control{
     width: 45vh;
+    margin-bottom: 4vh;
  }
 } 
 #cadastro button{
@@ -225,12 +231,10 @@ html,body{
 }
 .social{
   width: 100%;
-  display: flex;
-  flex-direction: row;
+
 }
 .social ul{
   list-style: none;
-  margin: auto;
 }
 .social ul li{
   float: left;
@@ -238,16 +242,13 @@ html,body{
 }
 .social img{
   width: 8vw;
-  border-radius: 2vw;
-  display: inline-block;
-  
 }
 @media only screen and (max-width: 768px){
-  #cadastro{
-    padding-top: 10vh;
-    font-size: 2vw;
-  }
-}
+  .social img{
+    width: 12vh;
+ }
+} 
+
 /* CONTATO **************************************************/
 #contato{
   width: 100%;
