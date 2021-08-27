@@ -196,7 +196,12 @@ html,body{
   #cadastro{
     padding-top: 3vh;
     font-size: 3.5vw;
+  }
+  #cadastro p{
     padding: 0 7vw;
+  }
+  #cadastro h3{
+    padding: 5vh 0vw;
   }
 }
 #cadastro h3{
